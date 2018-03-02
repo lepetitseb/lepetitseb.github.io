@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/***********************************************fin du reset*/
+
+
+body{
+	background-color: #FCFCFC;
+	
+}
+
+
+
+#conteneur{
+	width: 80%;
+	margin: auto;
+
+
+
+}
+
+header{
+	height: 140px;
+	width: 80%;
+	position: fixed;
+	top: 0px;
+	left: 10%;
+	background-color: #F6F6F6 ;
+	
+
+
+}
+
+#logo{
+	/*float: right;*/
+	margin-top: 30px;
+	/*margin-right:50px;*/
+	margin-left: 50px;
+	vertical-align: middle;
+	width: 10%;
+	height: 100px;
+	display: inline-block;
+
+}
+
+#logo img{
+	width: 150px;
+
+
+}
+
+nav{
+	/*float: left;*/
+	margin-top: 30px;
+ 	width:80%; 
+ 	display: inline-block;
+ 	height: 100px;
+
+}
+
+
+
+
+ul{	
+	position: relative;
+ 	left: 45%;
+ 	text-align: right;
+	margin-top: 20px;
+	width: 500px;
+
+}
+
+li{
+	
+	margin-top: 10px;
+	margin-right: 30px;
+	font-family: 'Roboto bold', sans-serif;
+	width: auto;
+	display: inline-block;
+	font-size: 20px;
+	
+}
+
+li a{
+	color: #516e84;
+
+}
+
+
+/* menu page works */
+
+#selecteur{
+	color:#0000ff;
+	font-weight: bold;
+}
+
+
+
+/*** 
+
+/*** ligne sous texte *** /
+li:before {
+ content: "";
+ position: absolute;
+ z-index: -20;
+ left:0;
+ right: 100%;
+ bottom: 50%;
+ background: #5FC2A8; /**couleur de la ligne*** /
+ height: 10px; /*** THICKNESS OF THE LINE *** /
+
+  -webkit-transition-duration: 0.3s;
+ transition-duration: 0.3s;
+
+}
+li:hover {
+ opacity: 1 ;
+}
+li:hover:before {
+ right: 0;
+}
+li:before {
+ bottom: 10%;
+}
+
+***/
+
+
+
+
+/***********************************************fin du header*/
+
+
+
+section{
+	width: 95%;
+	margin: 160px auto;
+
+}
+
+article{
+
+	width:  30%;	
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2.8%;
+	margin-bottom: 50px;
+}
+
+
+article figure img{
+	width: 100%;
+}
+
+article figure img:hover{
+	color: #0000ff;
+	opacity: 0.7;
+	
+}
+
+
+h1{
+	
+	text-decoration: underline grey; 
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	height: 70px;
+	font-size: 15px;
+	/*margin-right: 20px;*/
+	text-align:center;
+
+
+}
+
+div#about{
+	padding-top: 70px;
+	/*padding-bottom: 70px;*/
+	width: 100%;
+	margin: auto;
+}
+
+
+div#main_contact{
+	width: 100%;
+	background-color: white;
+}
+
+div#contact{
+	width: 15%;
+	text-align: right;
+	margin: auto;
+	
+}
+
+#contact li{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	color: #0000ff;
+	text-align: left;
+}
+
+
+
+
+
+p{
+	float:left;
+	
+	top:300px
+	margin-right:50px;
+	width:500px;
+	
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	/*margin-right: 20px;*/
+	
+}
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+figcaption{
+	opacity: 0;
+	color:grey;
+}
+
+
+
+
+/*figure{
+	-moz-box-shadow: 15px 15px 15px #999999;
+	-webkit-box-shadow: 15px 15px 15px #999999;
+	box-shadow: 15px 15px 15px #999999;****************ombre porte*/
+}
+
+:hover img {
+   -webkit-transform: translate(0px,0px);
+   transform: translate(0px,0px);
+   -webkit-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+
+/*****************************************page travaux*/
+.photo{
+    float: left;
+}
+
+.contenu{
+    padding-left: 50px;
+}
+
+.bloc{
+    padding: 30px;
+    display: flex;
+    align-content: center;
+}
+
+.retour{
+    padding: 50px;
+    font-size: 4em;
+}
+
+.back{
+    text-decoration: none;
+    color: black;
+}
+
+.back:hover{
+    color: darkgray;
+    transition: all 0.2s ease;
+}
